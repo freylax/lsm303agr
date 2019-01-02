@@ -1,0 +1,25 @@
+[package]
+authors = ["Robert Hennig <robert@freylax.de>"]
+categories = ["embedded", "hardware-support", "no-std"]
+description = "A platform agnostic driver to interface with the LSM303AGR (accelerometer + compass)"
+documentation = "https://docs.rs/lsm303agr"
+keywords = ["embedded-hal-driver", "accelerometer", "compass", "MEMS"]
+license = "MIT OR Apache-2.0"
+name = "lsm303agr"
+repository = "https://github.com/freylax/lsm303agr"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+embedded-hal = "0.2.0"
+generic-array = "0.11.0"
+paste = "0.1"
+u8bits = { path = "../u8bits" }
+surjective-enum = { path = "../surjective-enum" }
+typenum = "1.10"
+seq-macro = "0.1"
+
+[dependencies.cast]
+default-features = false
+version = "0.2.2"
+
